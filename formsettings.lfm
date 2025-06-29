@@ -1,0 +1,796 @@
+object frmSettings: TfrmSettings
+  Left = 604
+  Height = 832
+  Top = 250
+  Width = 1197
+  Caption = 'Settings'
+  ClientHeight = 832
+  ClientWidth = 1197
+  DesignTimePPI = 144
+  LCLVersion = '4.99.0.0'
+  OnCreate = FormCreate
+  OnShow = FormShow
+  object lbSettingsCategories: TListBox
+    Left = 6
+    Height = 820
+    Top = 6
+    Width = 296
+    Align = alLeft
+    BorderSpacing.Left = 6
+    BorderSpacing.Top = 6
+    BorderSpacing.Bottom = 6
+    ExtendedSelect = False
+    ItemHeight = 24
+    Options = []
+    Style = lbOwnerDrawFixed
+    TabOrder = 0
+    TopIndex = -1
+    OnDrawItem = lbSettingsCategoriesDrawItem
+    OnMouseLeave = lbSettingsCategoriesMouseLeave
+    OnMouseMove = lbSettingsCategoriesMouseMove
+    OnSelectionChange = lbSettingsCategoriesSelectionChange
+  end
+  object Splitter1: TSplitter
+    Left = 302
+    Height = 832
+    Top = 0
+    Width = 8
+  end
+  object Panel1: TPanel
+    Left = 310
+    Height = 820
+    Top = 6
+    Width = 881
+    Align = alClient
+    BorderSpacing.Top = 6
+    BorderSpacing.Right = 6
+    BorderSpacing.Bottom = 6
+    BevelOuter = bvNone
+    ClientHeight = 820
+    ClientWidth = 881
+    TabOrder = 2
+    object btnSave: TButton
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = Panel1
+      AnchorSideBottom.Side = asrBottom
+      Left = 728
+      Height = 39
+      Top = 759
+      Width = 131
+      Anchors = [akRight, akBottom]
+      BorderSpacing.Right = 22
+      BorderSpacing.Bottom = 22
+      Caption = 'Save'
+      Default = True
+      TabOrder = 3
+      OnClick = btnSaveClick
+    end
+    object btnCancel: TButton
+      AnchorSideTop.Control = btnSave
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = btnSave
+      AnchorSideBottom.Control = Panel1
+      AnchorSideBottom.Side = asrBottom
+      Left = 557
+      Height = 38
+      Top = 759
+      Width = 131
+      Anchors = [akTop, akRight]
+      BorderSpacing.Right = 40
+      BorderSpacing.Bottom = 24
+      Cancel = True
+      Caption = 'Cancel'
+      TabOrder = 2
+      OnClick = btnCancelClick
+    end
+    object nbSettings: TNotebook
+      Left = 0
+      Height = 730
+      Top = 0
+      Width = 881
+      PageIndex = 0
+      Align = alTop
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      BorderSpacing.Bottom = 24
+      TabOrder = 0
+      object tsPageMain: TPage
+        object sbPageMain: TScrollBox
+          Left = 2
+          Height = 726
+          Top = 2
+          Width = 877
+          HorzScrollBar.Page = 774
+          VertScrollBar.Page = 675
+          Align = alClient
+          BorderSpacing.Left = 2
+          BorderSpacing.Top = 2
+          BorderSpacing.Right = 2
+          BorderSpacing.Bottom = 2
+          BorderStyle = bsNone
+          ClientHeight = 726
+          ClientWidth = 877
+          TabOrder = 0
+          object panelKbSwitch: TPanel
+            AnchorSideLeft.Control = sbPageMain
+            AnchorSideTop.Control = panelMainSettings
+            AnchorSideTop.Side = asrBottom
+            AnchorSideRight.Control = sbPageMain
+            AnchorSideRight.Side = asrBottom
+            AnchorSideBottom.Control = sbPageMain
+            Left = 12
+            Height = 139
+            Top = 278
+            Width = 853
+            Anchors = [akTop, akLeft, akRight]
+            AutoSize = True
+            BorderSpacing.Left = 12
+            BorderSpacing.Top = 32
+            BorderSpacing.Right = 12
+            BevelOuter = bvNone
+            ClientHeight = 139
+            ClientWidth = 853
+            TabOrder = 1
+            object chbKbGroupsSwitch: TCheckBox
+              AnchorSideLeft.Control = panelKbSwitch
+              AnchorSideTop.Control = panelKbSwitch
+              Left = 0
+              Height = 27
+              Top = 0
+              Width = 236
+              Caption = 'Switch keyboard layout'
+              TabOrder = 0
+              OnChange = chbKbGroupsSwitchChange
+            end
+            object rbKbGroupDetect: TRadioButton
+              AnchorSideLeft.Control = chbKbGroupsSwitch
+              AnchorSideTop.Control = chbKbGroupsSwitch
+              AnchorSideTop.Side = asrBottom
+              Left = 32
+              Height = 27
+              Top = 35
+              Width = 255
+              BorderSpacing.Left = 32
+              BorderSpacing.Top = 8
+              Caption = 'Detect destination layout'
+              Checked = True
+              TabOrder = 1
+              TabStop = True
+              OnChange = chbKbGroupsSwitchChange
+            end
+            object rbKbGroupPair: TRadioButton
+              AnchorSideLeft.Control = rbKbGroupDetect
+              AnchorSideTop.Control = rbKbGroupDetect
+              AnchorSideTop.Side = asrBottom
+              Left = 32
+              Height = 27
+              Top = 70
+              Width = 286
+              BorderSpacing.Top = 8
+              Caption = 'Switch between two layouts:'
+              TabOrder = 2
+              OnChange = chbKbGroupsSwitchChange
+            end
+            object lblKbGroupPair1: TLabel
+              AnchorSideLeft.Control = rbKbGroupPair
+              AnchorSideTop.Control = cbKbGroupPair1
+              AnchorSideTop.Side = asrCenter
+              Left = 64
+              Height = 23
+              Top = 108
+              Width = 82
+              BorderSpacing.Left = 32
+              BorderSpacing.Top = 4
+              Caption = 'Layout 1:'
+            end
+            object cbKbGroupPair1: TComboBox
+              AnchorSideLeft.Control = lblKbGroupPair1
+              AnchorSideLeft.Side = asrBottom
+              AnchorSideTop.Control = rbKbGroupPair
+              AnchorSideTop.Side = asrBottom
+              Left = 150
+              Height = 39
+              Top = 100
+              Width = 243
+              BorderSpacing.Left = 4
+              BorderSpacing.Top = 3
+              DropDownCount = 12
+              ItemHeight = 0
+              Style = csDropDownList
+              TabOrder = 3
+            end
+            object lblKbGroupPair2: TLabel
+              AnchorSideLeft.Control = cbKbGroupPair1
+              AnchorSideLeft.Side = asrBottom
+              AnchorSideTop.Control = lblKbGroupPair1
+              Left = 421
+              Height = 23
+              Top = 108
+              Width = 82
+              BorderSpacing.Left = 28
+              Caption = 'Layout 2:'
+            end
+            object cbKbGroupPair2: TComboBox
+              AnchorSideLeft.Control = lblKbGroupPair2
+              AnchorSideLeft.Side = asrBottom
+              AnchorSideTop.Control = cbKbGroupPair1
+              AnchorSideTop.Side = asrCenter
+              Left = 507
+              Height = 39
+              Top = 100
+              Width = 243
+              BorderSpacing.Left = 4
+              DropDownCount = 12
+              ItemHeight = 0
+              Style = csDropDownList
+              TabOrder = 4
+            end
+          end
+          object panelMainSettings: TPanel
+            AnchorSideLeft.Control = sbPageMain
+            AnchorSideTop.Control = sbPageMain
+            AnchorSideRight.Control = sbPageMain
+            AnchorSideRight.Side = asrBottom
+            Left = 12
+            Height = 234
+            Top = 12
+            Width = 853
+            Anchors = [akTop, akLeft, akRight]
+            AutoSize = True
+            BorderSpacing.Left = 12
+            BorderSpacing.Top = 12
+            BorderSpacing.Right = 12
+            BevelOuter = bvNone
+            ClientHeight = 234
+            ClientWidth = 853
+            TabOrder = 0
+            object chbShowIcon: TCheckBox
+              AnchorSideLeft.Control = panelMainSettings
+              AnchorSideTop.Control = cbLanguages
+              AnchorSideTop.Side = asrBottom
+              Left = 0
+              Height = 27
+              Top = 82
+              Width = 179
+              BorderSpacing.Top = 16
+              Caption = 'Show icon in tray'
+              TabOrder = 1
+            end
+            object chbAutostart: TCheckBox
+              AnchorSideLeft.Control = chbLaunchMinimized
+              AnchorSideTop.Control = chbLaunchMinimized
+              AnchorSideTop.Side = asrBottom
+              Left = 0
+              Height = 27
+              Top = 207
+              Width = 249
+              BorderSpacing.Top = 8
+              Caption = 'Add to system Autostart'
+              TabOrder = 4
+            end
+            object chbLaunchMinimized: TCheckBox
+              AnchorSideLeft.Control = chbShowIcon
+              AnchorSideTop.Control = cbTrayIcons
+              AnchorSideTop.Side = asrBottom
+              Left = 0
+              Height = 27
+              Top = 172
+              Width = 185
+              BorderSpacing.Top = 16
+              Caption = 'Launch minimized'
+              TabOrder = 3
+            end
+            object cbTrayIcons: TComboBoxEx
+              AnchorSideLeft.Control = chbShowIcon
+              AnchorSideTop.Control = chbShowIcon
+              AnchorSideTop.Side = asrBottom
+              Left = 32
+              Height = 39
+              Top = 117
+              Width = 264
+              BorderSpacing.Left = 32
+              BorderSpacing.Top = 8
+              DropDownCount = 12
+              ItemHeight = 0
+              ItemsEx = <>
+              Style = csExDropDownList
+              TabOrder = 2
+            end
+            object cbLanguages: TComboBoxEx
+              AnchorSideLeft.Control = lblLanguage
+              AnchorSideTop.Control = lblLanguage
+              AnchorSideTop.Side = asrBottom
+              Left = 32
+              Height = 39
+              Top = 27
+              Width = 361
+              BorderSpacing.Left = 32
+              BorderSpacing.Top = 4
+              DropDownCount = 12
+              ItemHeight = 0
+              ItemsEx = <>
+              Style = csExDropDownList
+              TabOrder = 0
+            end
+            object lblLanguage: TLabel
+              AnchorSideLeft.Control = panelMainSettings
+              AnchorSideTop.Control = panelMainSettings
+              Left = 0
+              Height = 23
+              Top = 0
+              Width = 92
+              Caption = 'Language:'
+            end
+          end
+          object panelConvertLayouts: TPanel
+            AnchorSideLeft.Control = sbPageMain
+            AnchorSideTop.Control = panelKbSwitch
+            AnchorSideTop.Side = asrBottom
+            AnchorSideRight.Control = sbPageMain
+            AnchorSideRight.Side = asrBottom
+            AnchorSideBottom.Control = sbPageMain
+            AnchorSideBottom.Side = asrBottom
+            Left = 12
+            Height = 265
+            Top = 449
+            Width = 853
+            Anchors = [akTop, akLeft, akRight, akBottom]
+            BorderSpacing.Left = 12
+            BorderSpacing.Top = 32
+            BorderSpacing.Right = 12
+            BorderSpacing.Bottom = 12
+            BorderSpacing.InnerBorder = 12
+            BevelOuter = bvNone
+            ClientHeight = 265
+            ClientWidth = 853
+            TabOrder = 2
+            object lblConvertLayouts: TLabel
+              AnchorSideLeft.Control = panelConvertLayouts
+              AnchorSideTop.Control = panelConvertLayouts
+              Left = 0
+              Height = 23
+              Top = 0
+              Width = 154
+              Caption = 'Convert layouts:'
+              Font.Style = [fsBold]
+              ParentFont = False
+            end
+            object vstConvertLayouts: TLazVirtualStringTree
+              AnchorSideLeft.Control = lblConvertLayouts
+              AnchorSideTop.Control = lblConvertLayouts
+              AnchorSideTop.Side = asrBottom
+              AnchorSideRight.Control = panelConvertLayouts
+              AnchorSideRight.Side = asrBottom
+              AnchorSideBottom.Control = chbAltGrSymbols
+              Left = 32
+              Height = 195
+              Top = 31
+              Width = 813
+              Anchors = [akTop, akLeft, akRight, akBottom]
+              BorderSpacing.Left = 32
+              BorderSpacing.Top = 8
+              BorderSpacing.Right = 8
+              BorderSpacing.Bottom = 12
+              Constraints.MinHeight = 120
+              Header.AutoSizeIndex = 1
+              Header.Columns = <              
+                item
+                  CheckBox = True
+                  Position = 0
+                  Width = 50
+                end              
+                item
+                  Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAutoSpring, coSmartResize, coAllowFocus]
+                  Position = 1
+                  Width = 763
+                end>
+              Header.Options = [hoAutoResize, hoColumnResize, hoDrag, hoShowImages, hoShowSortGlyphs, hoAutoSpring]
+              TabOrder = 0
+              TreeOptions.AutoOptions = [toAutoDropExpand, toAutoExpand, toAutoScrollOnExpand, toAutoTristateTracking, toAutoDeleteMovedNodes, toAutoChangeScale]
+              TreeOptions.MiscOptions = [toCheckSupport, toFullRepaintOnResize, toInitOnSave, toToggleOnDblClick, toWheelPanning, toNodeHeightResize]
+              TreeOptions.PaintOptions = [toShowButtons, toShowDropmark, toThemeAware, toUseBlendedImages, toUseExplorerTheme]
+              TreeOptions.SelectionOptions = [toFullRowSelect]
+              OnChange = vstConvertLayoutsChange
+              OnChecked = vstConvertLayoutsChecked
+              OnChecking = vstConvertLayoutsChecking
+              OnFocusChanged = vstConvertLayoutsFocusChanged
+              OnFreeNode = vstConvertLayoutsFreeNode
+              OnGetText = vstConvertLayoutsGetText
+              OnGetNodeDataSize = vstConvertLayoutsGetNodeDataSize
+              OnInitNode = vstConvertLayoutsInitNode
+            end
+            object chbAltGrSymbols: TCheckBox
+              AnchorSideLeft.Control = vstConvertLayouts
+              AnchorSideBottom.Control = panelConvertLayouts
+              AnchorSideBottom.Side = asrBottom
+              Left = 64
+              Height = 27
+              Top = 238
+              Width = 152
+              Anchors = [akLeft, akBottom]
+              BorderSpacing.Left = 32
+              Caption = 'AltGr symbols'
+              TabOrder = 1
+              OnChange = chbAltGrSymbolsChange
+            end
+            object chbCapitalSymbols: TCheckBox
+              AnchorSideLeft.Control = chbAltGrSymbols
+              AnchorSideLeft.Side = asrBottom
+              AnchorSideTop.Control = chbAltGrSymbols
+              AnchorSideTop.Side = asrCenter
+              AnchorSideBottom.Control = chbAltGrSymbols
+              AnchorSideBottom.Side = asrBottom
+              Left = 242
+              Height = 27
+              Top = 238
+              Width = 167
+              Anchors = [akLeft, akBottom]
+              BorderSpacing.Left = 26
+              Caption = 'Capital symbols'
+              TabOrder = 2
+              OnChange = chbCapitalSymbolsChange
+            end
+          end
+        end
+      end
+      object tsPageMethod: TPage
+        object sbPageMethod: TScrollBox
+          Left = 2
+          Height = 726
+          Top = 2
+          Width = 877
+          HorzScrollBar.Page = 243
+          VertScrollBar.Page = 607
+          Align = alClient
+          BorderSpacing.Left = 2
+          BorderSpacing.Top = 2
+          BorderSpacing.Right = 2
+          BorderSpacing.Bottom = 2
+          BorderStyle = bsNone
+          ClientHeight = 726
+          ClientWidth = 877
+          TabOrder = 0
+          object panelInputMethod: TPanel
+            AnchorSideLeft.Control = sbPageMethod
+            AnchorSideTop.Control = sbPageMethod
+            AnchorSideRight.Control = sbPageMethod
+            AnchorSideRight.Side = asrBottom
+            Left = 12
+            Height = 315
+            Top = 12
+            Width = 853
+            Anchors = [akTop, akLeft, akRight]
+            AutoSize = True
+            BorderSpacing.Left = 12
+            BorderSpacing.Top = 12
+            BorderSpacing.Right = 12
+            BorderSpacing.InnerBorder = 12
+            BevelOuter = bvNone
+            ClientHeight = 315
+            ClientWidth = 853
+            TabOrder = 0
+            object rbInputPrimarySelection: TRadioButton
+              AnchorSideLeft.Control = lblInputMethodCaption
+              AnchorSideTop.Control = lblInputMethodCaption
+              AnchorSideTop.Side = asrBottom
+              Left = 8
+              Height = 27
+              Top = 31
+              Width = 182
+              BorderSpacing.Left = 8
+              BorderSpacing.Top = 8
+              Caption = 'Primary selection'
+              Checked = True
+              TabOrder = 0
+              TabStop = True
+              OnChange = rbInputPrimarySelectionChange
+            end
+            object rbInputClipboard: TRadioButton
+              AnchorSideLeft.Control = rbInputPrimarySelection
+              AnchorSideTop.Control = lblInputPrimarySelectionDescription
+              AnchorSideTop.Side = asrBottom
+              Left = 8
+              Height = 27
+              Top = 135
+              Width = 187
+              BorderSpacing.Top = 6
+              Caption = 'Copy to clipboard'
+              TabOrder = 1
+              OnChange = rbInputPrimarySelectionChange
+            end
+            object lblInputPrimarySelectionDescription: TLabel
+              AnchorSideLeft.Control = rbInputPrimarySelection
+              AnchorSideTop.Control = rbInputPrimarySelection
+              AnchorSideTop.Side = asrBottom
+              AnchorSideRight.Control = panelInputMethod
+              AnchorSideRight.Side = asrBottom
+              Left = 40
+              Height = 69
+              Top = 60
+              Width = 813
+              Anchors = [akTop, akLeft, akRight]
+              BorderSpacing.Left = 32
+              BorderSpacing.Top = 2
+              Caption = 'Primary selection is a special clipboard that contains last selection. Simple solution, but not every application reports to Primary Selection. WINE does not report to Primary Selection and so as some qt and GTK4 application.'
+              WordWrap = True
+            end
+            object lblInputClipboardDescription: TLabel
+              AnchorSideLeft.Control = lblInputPrimarySelectionDescription
+              AnchorSideTop.Control = cbInputHotkey
+              AnchorSideTop.Side = asrBottom
+              AnchorSideRight.Control = panelInputMethod
+              AnchorSideRight.Side = asrBottom
+              Left = 40
+              Height = 92
+              Top = 199
+              Width = 813
+              Anchors = [akTop, akLeft, akRight]
+              BorderSpacing.Top = 2
+              Caption = 'Emulate selected keystroke to copy selection to clipboard. If there is any text before operation in Clipboard it will be backed up and restored after completion. Backing up larger elements is pointless, as image might take 10 seconds or more. So anything else in Clipboard will be lost in this case.'
+              WordWrap = True
+            end
+            object lblInputMethodCaption: TLabel
+              AnchorSideLeft.Control = panelInputMethod
+              AnchorSideTop.Control = panelInputMethod
+              Left = 0
+              Height = 23
+              Top = 0
+              Width = 135
+              Caption = 'Input method:'
+              Font.Style = [fsBold]
+              ParentFont = False
+            end
+            object cbInputHotkey: TComboBox
+              AnchorSideLeft.Control = lblInputPrimarySelectionDescription
+              AnchorSideTop.Control = rbInputClipboard
+              AnchorSideTop.Side = asrBottom
+              Left = 40
+              Height = 35
+              Top = 162
+              Width = 150
+              ItemHeight = 0
+              Items.Strings = (
+                'Ctrl+C'
+                'Ctrl+Ins'
+              )
+              Style = csDropDownList
+              TabOrder = 2
+            end
+          end
+          object panelOutputMethod: TPanel
+            AnchorSideLeft.Control = panelInputMethod
+            AnchorSideTop.Control = panelInputMethod
+            AnchorSideTop.Side = asrBottom
+            AnchorSideRight.Control = panelInputMethod
+            AnchorSideRight.Side = asrBottom
+            Left = 12
+            Height = 280
+            Top = 327
+            Width = 853
+            Anchors = [akTop, akLeft, akRight]
+            AutoSize = True
+            BevelOuter = bvNone
+            ClientHeight = 280
+            ClientWidth = 853
+            TabOrder = 1
+            object rbOutputPrimarySelection: TRadioButton
+              AnchorSideLeft.Control = lblOutputMethodCaption
+              AnchorSideTop.Control = lblOutputMethodCaption
+              AnchorSideTop.Side = asrBottom
+              Left = 8
+              Height = 27
+              Top = 31
+              Width = 182
+              BorderSpacing.Left = 8
+              BorderSpacing.Top = 8
+              Caption = 'Primary selection'
+              TabOrder = 0
+              OnChange = rbOutputPrimarySelectionChange
+            end
+            object rbOutputClipboard: TRadioButton
+              AnchorSideLeft.Control = rbOutputPrimarySelection
+              AnchorSideTop.Control = lblOutputPrimarySelectionDescription
+              AnchorSideTop.Side = asrBottom
+              Left = 8
+              Height = 27
+              Top = 112
+              Width = 216
+              BorderSpacing.Top = 6
+              Caption = 'Paste from clipboard'
+              Checked = True
+              TabOrder = 1
+              TabStop = True
+              OnChange = rbOutputPrimarySelectionChange
+            end
+            object rbOutputSendText: TRadioButton
+              AnchorSideLeft.Control = rbOutputClipboard
+              AnchorSideTop.Control = lblOutputClipboardDescription
+              AnchorSideTop.Side = asrBottom
+              Left = 8
+              Height = 27
+              Top = 205
+              Width = 158
+              BorderSpacing.Top = 6
+              Caption = 'Type in output'
+              TabOrder = 3
+              OnChange = rbOutputPrimarySelectionChange
+            end
+            object lblOutputMethodCaption: TLabel
+              AnchorSideLeft.Control = panelOutputMethod
+              AnchorSideTop.Control = panelOutputMethod
+              Left = 0
+              Height = 23
+              Top = 0
+              Width = 154
+              Caption = 'Output method:'
+              Font.Style = [fsBold]
+              ParentFont = False
+            end
+            object lblOutputPrimarySelectionDescription: TLabel
+              AnchorSideLeft.Control = rbOutputPrimarySelection
+              AnchorSideTop.Control = rbOutputPrimarySelection
+              AnchorSideTop.Side = asrBottom
+              AnchorSideRight.Control = panelOutputMethod
+              AnchorSideRight.Side = asrBottom
+              Left = 40
+              Height = 46
+              Top = 60
+              Width = 813
+              Anchors = [akTop, akLeft, akRight]
+              BorderSpacing.Left = 32
+              BorderSpacing.Top = 2
+              Caption = 'Just copy back into Primary Selection, so user can insert it manually with middle mouse click. Unfortunetely there is no way to paste from Primary Selection with keyboard.'
+              WordWrap = True
+            end
+            object lblOutputClipboardDescription: TLabel
+              AnchorSideLeft.Control = lblOutputPrimarySelectionDescription
+              AnchorSideTop.Control = cbOutputHotkey
+              AnchorSideTop.Side = asrBottom
+              AnchorSideRight.Control = panelOutputMethod
+              AnchorSideRight.Side = asrBottom
+              Left = 40
+              Height = 23
+              Top = 176
+              Width = 813
+              Anchors = [akTop, akLeft, akRight]
+              BorderSpacing.Top = 2
+              Caption = 'Emulate selected keystroke to insert output from Clipboard.'
+              WordWrap = True
+            end
+            object lblOutputSendTextDescription: TLabel
+              AnchorSideLeft.Control = lblOutputClipboardDescription
+              AnchorSideTop.Control = rbOutputSendText
+              AnchorSideTop.Side = asrBottom
+              AnchorSideRight.Control = panelOutputMethod
+              AnchorSideRight.Side = asrBottom
+              Left = 40
+              Height = 46
+              Top = 234
+              Width = 813
+              Anchors = [akTop, akLeft, akRight]
+              BorderSpacing.Top = 2
+              Caption = 'Emulate keyboard typing. Not always reliable. X11 might lag and lose some keystrokes sometimes.'
+              WordWrap = True
+            end
+            object cbOutputHotkey: TComboBox
+              AnchorSideLeft.Control = lblOutputPrimarySelectionDescription
+              AnchorSideTop.Control = rbOutputClipboard
+              AnchorSideTop.Side = asrBottom
+              Left = 40
+              Height = 35
+              Top = 139
+              Width = 150
+              ItemHeight = 0
+              Items.Strings = (
+                'Ctrl+V'
+                'Shift+Ins'
+              )
+              Style = csDropDownList
+              TabOrder = 2
+            end
+          end
+        end
+      end
+      object tsPageKeyBindings: TPage
+        object vstKeyBinds: TLazVirtualStringTree
+          Left = 12
+          Height = 718
+          Top = 12
+          Width = 857
+          Align = alClient
+          BorderSpacing.Left = 12
+          BorderSpacing.Top = 12
+          BorderSpacing.Right = 12
+          DefaultText = 'Node'
+          Header.AutoSizeIndex = 0
+          Header.Columns = <          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAutoSpring, coSmartResize, coAllowFocus]
+              Position = 0
+              Width = 557
+            end          
+            item
+              Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAutoSpring, coSmartResize, coAllowFocus]
+              Position = 1
+              Width = 300
+            end>
+          Header.Options = [hoAutoResize, hoColumnResize, hoDrag, hoShowSortGlyphs]
+          TabOrder = 0
+          TreeOptions.AutoOptions = [toAutoDropExpand, toAutoScrollOnExpand, toAutoSort, toAutoSpanColumns, toAutoTristateTracking, toAutoDeleteMovedNodes, toAutoChangeScale]
+          TreeOptions.MiscOptions = [toFullRepaintOnResize, toInitOnSave, toToggleOnDblClick, toWheelPanning]
+          TreeOptions.PaintOptions = [toHideFocusRect, toThemeAware, toUseBlendedImages, toUseExplorerTheme, toHideTreeLinesIfThemed]
+          TreeOptions.SelectionOptions = [toFullRowSelect]
+          OnChange = vstKeyBindsChange
+          OnFocusChanged = vstKeyBindsFocusChanged
+          OnFreeNode = vstKeyBindsFreeNode
+          OnGetText = vstKeyBindsGetText
+          OnGetNodeDataSize = vstKeyBindsGetNodeDataSize
+          OnKeyAction = vstKeyBindsKeyAction
+          OnNodeDblClick = vstKeyBindsNodeDblClick
+        end
+      end
+      object tsPageAbout: TPage
+        object sbPageAbout: TScrollBox
+          Left = 2
+          Height = 726
+          Top = 2
+          Width = 877
+          HorzScrollBar.Page = 124
+          VertScrollBar.Page = 70
+          Align = alClient
+          BorderSpacing.Left = 2
+          BorderSpacing.Top = 2
+          BorderSpacing.Right = 2
+          BorderSpacing.Bottom = 2
+          BorderStyle = bsNone
+          ClientHeight = 726
+          ClientWidth = 877
+          TabOrder = 0
+          object lblAboutInfo: TLabel
+            AnchorSideLeft.Control = lblApplicationTitle
+            AnchorSideTop.Control = lblApplicationTitle
+            AnchorSideTop.Side = asrBottom
+            Left = 12
+            Height = 23
+            Top = 35
+            Width = 112
+            BorderSpacing.Bottom = 12
+            Caption = 'About info...'
+          end
+          object lblApplicationTitle: TLabel
+            AnchorSideLeft.Control = sbPageAbout
+            AnchorSideTop.Control = sbPageAbout
+            Left = 12
+            Height = 23
+            Top = 12
+            Width = 99
+            BorderSpacing.Left = 12
+            BorderSpacing.Top = 12
+            Caption = 'KLConvert'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+        end
+      end
+    end
+    object btnApply: TButton
+      AnchorSideTop.Control = btnCancel
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = btnCancel
+      Left = 386
+      Height = 38
+      Top = 759
+      Width = 131
+      Anchors = [akTop, akRight]
+      BorderSpacing.Right = 40
+      Caption = 'Apply'
+      TabOrder = 1
+      OnClick = btnApplyClick
+    end
+  end
+  object ilTrayIcons: TImageList
+    Left = 1104
+    Top = 32
+  end
+end

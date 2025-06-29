@@ -1,0 +1,60 @@
+[DEBREATE-0.8-dev9]
+<<CTRL>>
+Package: klconvert-gtk2
+Version: 0.5
+Maintainer: coth <->
+Section: utils
+Source: https://github.com/regs01/KLConvert
+Architecture: amd64
+Priority: standard
+Depends: libxtst6, libxkbcommon0, libgtk2.0-0t64
+Description: Keyboard layout converter for X11
+<</CTRL>>
+<<FILES>>
+1
+./../../bin/release/klconvert-gtk2* -> klconvert-gtk2 -> /usr/bin
+./../../res/icons/hicolor/16x16/apps/klconvert.png -> klconvert.png -> /usr/share/icons/hicolor/16x16/apps
+./../../res/icons/hicolor/24x24/apps/klconvert.png -> klconvert.png -> /usr/share/icons/hicolor/24x24/apps
+./../../res/icons/hicolor/32x32/apps/klconvert.png -> klconvert.png -> /usr/share/icons/hicolor/32x32/apps
+./../../res/icons/hicolor/48x48/apps/klconvert.png -> klconvert.png -> /usr/share/icons/hicolor/48x48/apps
+./../../res/icons/hicolor/64x64/apps/klconvert.png -> klconvert.png -> /usr/share/icons/hicolor/64x64/apps
+./../../res/icons/hicolor/256x256/apps/klconvert.png -> klconvert.png -> /usr/share/icons/hicolor/256x256/apps
+./../../res/icons/hicolor/scalable/apps/klconvert.svg -> klconvert.svg -> /usr/share/icons/hicolor/scalable/apps
+<</FILES>>
+<<SCRIPTS>>
+<<PREINST>>
+0
+<</PREINST>>
+<<POSTINST>>
+0
+<</POSTINST>>
+<<PRERM>>
+0
+<</PRERM>>
+<<POSTRM>>
+0
+<</POSTRM>>
+<</SCRIPTS>>
+<<CHANGELOG>>
+<<DEST>>DEFAULT<</DEST>>
+
+<</CHANGELOG>>
+<<COPYRIGHT>>
+Copyright © 2025 
+
+/usr/share/common-licenses/LGPL-3
+<</COPYRIGHT>>
+<<MENU>>
+1
+Name=KLConvert
+Comment=Keyboard layout conventer for X11
+Comment[ru]=Конвертор раскладки для X11
+Version=1.0
+Exec=/usr/bin/klconvert-gtk2
+Icon=klconvert
+Type=Application
+Terminal=false
+StartupNotify=false
+Encoding=UTF-8
+Categories=Utility;
+<</MENU>>

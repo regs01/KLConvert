@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1024"
+   height="1024"
+   viewBox="0 0 1024 1024"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="klconvert3.2-100-dark.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="false"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="1.1258771"
+     inkscape:cx="440.54541"
+     inkscape:cy="552.01405"
+     inkscape:current-layer="svg1">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="32"
+       spacingy="32"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="2"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect3"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect2"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect1"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,192,0,1 @ F,0,0,1,0,192,0,1 @ F,0,0,1,0,192,0,1 @ F,0,0,1,0,0,0,1"
+       radius="192"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+  </defs>
+  <metadata
+     id="metadata3">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>coth</dc:title>
+          </cc:Agent>
+        </dc:creator>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <path
+     id="rect1"
+     style="fill:#000000;fill-opacity:1;stroke:#ececec;stroke-width:64;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+     d="M 576,96 H 224 C 153.088,96 96,153.088 96,224 v 576 c 0,70.912 57.088,128 128,128 h 352 z"
+     sodipodi:nodetypes="csssscc" />
+  <path
+     id="path1"
+     style="fill:#ececec;fill-opacity:1;stroke:#ececec;stroke-width:64;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+     d="m 544,96 v 832 h 256 c 70.912,0 128,-57.088 128,-128 V 224 C 928,153.088 870.912,96 800,96 Z"
+     sodipodi:nodetypes="ccssssc"
+     inkscape:label="rect2" />
+  <path
+     style="-inkscape-font-specification:'Noto Sans, Condensed';fill:#ececec;fill-opacity:1;stroke:none;stroke-opacity:1"
+     d="M 480,576 H 416 L 288,416 256,448 V 576 H 192 V 192 h 64 V 384 L 416,192 h 64 L 320,384 c 13.96803,6.16011 24.14047,15.93999 32,32 z"
+     id="text1"
+     aria-label="K"
+     sodipodi:nodetypes="cccccccccccccc" />
+  <path
+     style="-inkscape-font-specification:'Noto Sans, Condensed';fill:#000000;fill-opacity:1"
+     d="m 896,832 h -64 l 2.08003,-320.00002 h -64 L 736,704 c -12.89485,98.92798 -32.22923,128.066 -160,128 v -64 c 64,0 87.66401,-0.64646 96,-64 L 706.08003,447.99998 896,448 Z"
+     id="text2"
+     aria-label="Л"
+     sodipodi:nodetypes="ccccccccccc" />
+</svg>

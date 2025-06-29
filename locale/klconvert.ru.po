@@ -1,0 +1,361 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: coth\n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+
+#: formsettings.rsabout
+#, object-pascal-format
+msgid ""
+"Version %s\n"
+" \n"
+"Icons used in the app are create by FTurtle and Roland Hahn.\n"
+" \n"
+"Lazarus: %s\n"
+"Free Pascal: %s\n"
+"Platform: %s %s\n"
+"Widgetset: %s"
+msgstr ""
+"Версия %s\n"
+" \n"
+"В программе используются иконки созданные FTurtle и Roland Hahn.\n"
+" \n"
+"Lazarus: %s\n"
+"Free Pascal: %s\n"
+"Platform: %s %s\n"
+"Widgetset: %s"
+
+#: formsettings.rspageabout
+msgctxt "formsettings.rspageabout"
+msgid "About"
+msgstr "О программе"
+
+#: formsettings.rspagekeybindings
+msgctxt "formsettings.rspagekeybindings"
+msgid "Key Bindings"
+msgstr "Сочетания клавиш"
+
+#: formsettings.rspagemain
+msgctxt "formsettings.rspagemain"
+msgid "Main"
+msgstr "Основные"
+
+#: formsettings.rspagemethod
+msgctxt "formsettings.rspagemethod"
+msgid "Method"
+msgstr "Метод"
+
+#: formsettings.rsthemecolor
+msgid "Color"
+msgstr "Цветная"
+
+#: formsettings.rsthemedark
+msgid "Dark"
+msgstr "Тёмная"
+
+#: formsettings.rsthemedark2
+msgid "Dark2"
+msgstr "Тёмная2"
+
+#: formsettings.rsthemegray
+msgid "Gray"
+msgstr "Серая"
+
+#: formsettings.rsthemelight
+msgid "Light"
+msgstr "Светлая"
+
+#: tfrmmain.cactionclose.caption
+msgid "Exit"
+msgstr "Выход"
+
+#: tfrmmain.cactionconvert.caption
+msgctxt "tfrmmain.cactionconvert.caption"
+msgid "Convert"
+msgstr "Конвертировать"
+
+#: tfrmmain.cactionconvert.hint
+msgctxt "tfrmmain.cactionconvert.hint"
+msgid "Convert selection"
+msgstr "Сконвертировать выделенный текст"
+
+#: tfrmmain.cactioncopy.caption
+msgid "Copy"
+msgstr "Скопировать"
+
+#: tfrmmain.cactioncopy.hint
+msgid "Copy selection into clipboard"
+msgstr "Скопировать выделенный текст в буфер обмена"
+
+#: tfrmmain.cactionlocalconvert.caption
+msgctxt "tfrmmain.cactionlocalconvert.caption"
+msgid "Convert"
+msgstr "Конвертировать"
+
+#: tfrmmain.cactionlocalconvert.hint
+msgctxt "tfrmmain.cactionlocalconvert.hint"
+msgid "Convert selection"
+msgstr "Сконвертировать выделенный текст"
+
+#: tfrmmain.cactionlocallowercase.caption
+msgctxt "tfrmmain.cactionlocallowercase.caption"
+msgid "lower case"
+msgstr "строчные"
+
+#: tfrmmain.cactionlocallowercase.hint
+msgctxt "tfrmmain.cactionlocallowercase.hint"
+msgid "Transform into lower case"
+msgstr "Преобразовать в строчные"
+
+#: tfrmmain.cactionlocalpropercase.caption
+msgctxt "tfrmmain.cactionlocalpropercase.caption"
+msgid "Proper Case"
+msgstr "Каждое Слово С Прописной"
+
+#: tfrmmain.cactionlocalpropercase.hint
+msgctxt "tfrmmain.cactionlocalpropercase.hint"
+msgid "Transform into Proper Case"
+msgstr "Преобразовать регистр каждого слова в Прописной"
+
+#: tfrmmain.cactionlocalswapcase.caption
+msgctxt "tfrmmain.cactionlocalswapcase.caption"
+msgid "Swap case"
+msgstr "пЕРЕКЛЮЧИТЬ рЕГИСТР"
+
+#: tfrmmain.cactionlocalswapcase.hint
+msgctxt "tfrmmain.cactionlocalswapcase.hint"
+msgid "Transform swapping the case"
+msgstr "Преобразовать регистр в пРОТИВОПОЛОЖНЫЙ"
+
+#: tfrmmain.cactionlocaluppercase.caption
+msgctxt "tfrmmain.cactionlocaluppercase.caption"
+msgid "UPPER CASE"
+msgstr "ПРОПИСНЫЕ"
+
+#: tfrmmain.cactionlocaluppercase.hint
+msgctxt "tfrmmain.cactionlocaluppercase.hint"
+msgid "Transform into UPPER CASE"
+msgstr "Преобразовать в ПРОПИСНЫЕ"
+
+#: tfrmmain.cactionlowercase.caption
+msgctxt "tfrmmain.cactionlowercase.caption"
+msgid "lower case"
+msgstr "строчные"
+
+#: tfrmmain.cactionlowercase.hint
+msgctxt "tfrmmain.cactionlowercase.hint"
+msgid "Transform into lower case"
+msgstr "Преобразовать в строчные"
+
+#: tfrmmain.cactionpaste.caption
+msgid "Paste"
+msgstr "Вставить"
+
+#: tfrmmain.cactionpaste.hint
+msgctxt "tfrmmain.cactionpaste.hint"
+msgid "Paste from clipboard"
+msgstr "Вставить из буфера обмена"
+
+#: tfrmmain.cactionpropercase.caption
+msgctxt "tfrmmain.cactionpropercase.caption"
+msgid "Proper Case"
+msgstr "Каждое Слово С Прописной"
+
+#: tfrmmain.cactionpropercase.hint
+msgctxt "tfrmmain.cactionpropercase.hint"
+msgid "Transform into Proper Case"
+msgstr "Преобразовать регистр каждого слова в Прописной"
+
+#: tfrmmain.cactionsettings.caption
+msgctxt "tfrmmain.cactionsettings.caption"
+msgid "Settings"
+msgstr "Настройки"
+
+#: tfrmmain.cactionsettings.hint
+msgctxt "tfrmmain.cactionsettings.hint"
+msgid "Settings"
+msgstr "Настройки"
+
+#: tfrmmain.cactionshow.caption
+msgid "Show"
+msgstr "Показать"
+
+#: tfrmmain.cactionswapcase.caption
+msgctxt "tfrmmain.cactionswapcase.caption"
+msgid "Swap case"
+msgstr "пЕРЕКЛЮЧИТЬ рЕГИСТР"
+
+#: tfrmmain.cactionswapcase.hint
+msgctxt "tfrmmain.cactionswapcase.hint"
+msgid "Transform swapping the case"
+msgstr "Преобразовать регистр в пРОТИВОПОЛОЖНЫЙ"
+
+#: tfrmmain.cactionuppercase.caption
+msgctxt "tfrmmain.cactionuppercase.caption"
+msgid "UPPER CASE"
+msgstr "ПРОПИСНЫЕ"
+
+#: tfrmmain.cactionuppercase.hint
+msgctxt "tfrmmain.cactionuppercase.hint"
+msgid "Transform into UPPER CASE"
+msgstr "Преобразовать в ПРОПИСНЫЕ"
+
+#: tfrmmain.caption
+msgctxt "tfrmmain.caption"
+msgid "KLConvert"
+msgstr "KLConvert"
+
+#: tfrmmain.tdivider1.caption
+msgid "tDivider1"
+msgstr ""
+
+#: tfrmmain.tdivider2.caption
+msgid "tDivider2"
+msgstr ""
+
+#: tfrmmain.toolbar1.caption
+msgid "Main ToolBar"
+msgstr "Основная панель"
+
+#: tfrmsettings.btnapply.caption
+msgid "Apply"
+msgstr "Применить"
+
+#: tfrmsettings.btncancel.caption
+msgctxt "tfrmsettings.btncancel.caption"
+msgid "Cancel"
+msgstr "Отмена"
+
+#: tfrmsettings.btnsave.caption
+msgctxt "tfrmsettings.btnsave.caption"
+msgid "Save"
+msgstr "Сохранить"
+
+#: tfrmsettings.caption
+msgctxt "tfrmsettings.caption"
+msgid "Settings"
+msgstr "Настройки"
+
+#: tfrmsettings.chbaltgrsymbols.caption
+msgid "AltGr symbols"
+msgstr "Символы AltGr"
+
+#: tfrmsettings.chbautostart.caption
+msgid "Add to system Autostart"
+msgstr "Добавить в автозапуск"
+
+#: tfrmsettings.chbcapitalsymbols.caption
+msgid "Capital symbols"
+msgstr "Символы Caps Lock"
+
+#: tfrmsettings.chbkbgroupsswitch.caption
+msgid "Switch keyboard layout"
+msgstr "Изменить раскладку клавиатуры"
+
+#: tfrmsettings.chblaunchminimized.caption
+msgid "Launch minimized"
+msgstr "Запускать свёрнутым"
+
+#: tfrmsettings.chbshowicon.caption
+msgid "Show icon in tray"
+msgstr "Показывать иконку в трее"
+
+#: tfrmsettings.lblaboutinfo.caption
+msgid "About info..."
+msgstr "About info..."
+
+#: tfrmsettings.lblapplicationtitle.caption
+msgctxt "tfrmsettings.lblapplicationtitle.caption"
+msgid "KLConvert"
+msgstr "KLConvert"
+
+#: tfrmsettings.lblconvertlayouts.caption
+msgid "Convert layouts:"
+msgstr "Конвертация раскладок:"
+
+#: tfrmsettings.lblinputclipboarddescription.caption
+msgid "Emulate selected keystroke to copy selection to clipboard. If there is any text before operation in Clipboard it will be backed up and restored after completion. Backing up larger elements is pointless, as image might take 10 seconds or more. So anything else in Clipboard will be lost in this case."
+msgstr "Эмулировать нажатие выбранного сочетания клавиш для копирования в Буфера обмена. Если в буфере присутствует какой-то текст, то он будет сохранён и восстановлен по окончании операции. Попытки сохранения более крупных операций не имеют смысла, ибо их чтение может занять десятки секунд. Так что всё остальное в Буфере обмена будет утеряно."
+
+#: tfrmsettings.lblinputmethodcaption.caption
+msgid "Input method:"
+msgstr "Метод ввода:"
+
+#: tfrmsettings.lblinputprimaryselectiondescription.caption
+msgid "Primary selection is a special clipboard that contains last selection. Simple solution, but not every application reports to Primary Selection. WINE does not report to Primary Selection and so as some qt and GTK4 application."
+msgstr "Первичное выделение - это специальный буфер обмена, который содержит последние выделение. Простое решение, но не все приложения докладывают в буфер Первичного выделения. WINE не докладывает, а так же некоторые qt и GTK4 приложения."
+
+#: tfrmsettings.lblkbgrouppair1.caption
+msgid "Layout 1:"
+msgstr "Раскладка 1:"
+
+#: tfrmsettings.lblkbgrouppair2.caption
+msgid "Layout 2:"
+msgstr "Раскладка 2:"
+
+#: tfrmsettings.lbllanguage.caption
+msgid "Language:"
+msgstr "Язык:"
+
+#: tfrmsettings.lbloutputclipboarddescription.caption
+msgid "Emulate selected keystroke to insert output from Clipboard."
+msgstr "Эмулировать нажатие выбранного сочетания клавиш для вставки из Буфера обмена."
+
+#: tfrmsettings.lbloutputmethodcaption.caption
+msgid "Output method:"
+msgstr "Метод вывода:"
+
+#: tfrmsettings.lbloutputprimaryselectiondescription.caption
+msgid "Just copy back into Primary Selection, so user can insert it manually with middle mouse click. Unfortunetely there is no way to paste from Primary Selection with keyboard."
+msgstr "Просто копируем текст обратно в буфер Первичного выделения, так что пользователь может сам вставить текст вручную при помощи средней кнопки мыши. К сожалению, возможности вставить Первичное выделение с использованием клавиатуры нет."
+
+#: tfrmsettings.lbloutputsendtextdescription.caption
+msgid "Emulate keyboard typing. Not always reliable. X11 might lag and lose some keystrokes sometimes."
+msgstr "Эмулировать ввод текста нажатием кнопок. Не всегда надёжно. X11 может пролагивать терять некоторые нажатия."
+
+#: tfrmsettings.rbinputclipboard.caption
+msgid "Copy to clipboard"
+msgstr "Копирование в буфер"
+
+#: tfrmsettings.rbinputprimaryselection.caption
+msgctxt "tfrmsettings.rbinputprimaryselection.caption"
+msgid "Primary selection"
+msgstr "Первичное выделение (Primary selection)"
+
+#: tfrmsettings.rbkbgroupdetect.caption
+msgid "Detect destination layout"
+msgstr "Определить раскладку"
+
+#: tfrmsettings.rbkbgrouppair.caption
+msgid "Switch between two layouts:"
+msgstr "Переключаться между двух раскладок:"
+
+#: tfrmsettings.rboutputclipboard.caption
+msgctxt "tfrmsettings.rboutputclipboard.caption"
+msgid "Paste from clipboard"
+msgstr "Вставка из буфера"
+
+#: tfrmsettings.rboutputprimaryselection.caption
+msgctxt "tfrmsettings.rboutputprimaryselection.caption"
+msgid "Primary selection"
+msgstr "Первичное выделение (Primary selection)"
+
+#: tfrmsettings.rboutputsendtext.caption
+msgid "Type in output"
+msgstr "Набор текста"
+
+#: unitsettings.rserrorwritingini
+#, object-pascal-format
+msgid ""
+"Failed to write into settings file:\n"
+"%s"
+msgstr ""
+"Ошибка записи в файл настроек:\n"
+"%s"

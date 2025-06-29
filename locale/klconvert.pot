@@ -1,0 +1,336 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: formsettings.rsabout
+#, object-pascal-format
+msgid ""
+"Version %s\n"
+" \n"
+"Icons used in the app are create by FTurtle and Roland Hahn.\n"
+" \n"
+"Lazarus: %s\n"
+"Free Pascal: %s\n"
+"Platform: %s %s\n"
+"Widgetset: %s"
+msgstr ""
+
+#: formsettings.rspageabout
+msgid "About"
+msgstr ""
+
+#: formsettings.rspagekeybindings
+msgid "Key Bindings"
+msgstr ""
+
+#: formsettings.rspagemain
+msgid "Main"
+msgstr ""
+
+#: formsettings.rspagemethod
+msgid "Method"
+msgstr ""
+
+#: formsettings.rsthemecolor
+msgid "Color"
+msgstr ""
+
+#: formsettings.rsthemedark
+msgid "Dark"
+msgstr ""
+
+#: formsettings.rsthemedark2
+msgid "Dark2"
+msgstr ""
+
+#: formsettings.rsthemegray
+msgid "Gray"
+msgstr ""
+
+#: formsettings.rsthemelight
+msgid "Light"
+msgstr ""
+
+#: tfrmmain.cactionclose.caption
+msgid "Exit"
+msgstr ""
+
+#: tfrmmain.cactionconvert.caption
+msgctxt "tfrmmain.cactionconvert.caption"
+msgid "Convert"
+msgstr ""
+
+#: tfrmmain.cactionconvert.hint
+msgctxt "tfrmmain.cactionconvert.hint"
+msgid "Convert selection"
+msgstr ""
+
+#: tfrmmain.cactioncopy.caption
+msgid "Copy"
+msgstr ""
+
+#: tfrmmain.cactioncopy.hint
+msgid "Copy selection into clipboard"
+msgstr ""
+
+#: tfrmmain.cactionlocalconvert.caption
+msgctxt "tfrmmain.cactionlocalconvert.caption"
+msgid "Convert"
+msgstr ""
+
+#: tfrmmain.cactionlocalconvert.hint
+msgctxt "tfrmmain.cactionlocalconvert.hint"
+msgid "Convert selection"
+msgstr ""
+
+#: tfrmmain.cactionlocallowercase.caption
+msgctxt "tfrmmain.cactionlocallowercase.caption"
+msgid "lower case"
+msgstr ""
+
+#: tfrmmain.cactionlocallowercase.hint
+msgctxt "tfrmmain.cactionlocallowercase.hint"
+msgid "Transform into lower case"
+msgstr ""
+
+#: tfrmmain.cactionlocalpropercase.caption
+msgctxt "tfrmmain.cactionlocalpropercase.caption"
+msgid "Proper Case"
+msgstr ""
+
+#: tfrmmain.cactionlocalpropercase.hint
+msgctxt "tfrmmain.cactionlocalpropercase.hint"
+msgid "Transform into Proper Case"
+msgstr ""
+
+#: tfrmmain.cactionlocalswapcase.caption
+msgctxt "tfrmmain.cactionlocalswapcase.caption"
+msgid "Swap case"
+msgstr ""
+
+#: tfrmmain.cactionlocalswapcase.hint
+msgctxt "tfrmmain.cactionlocalswapcase.hint"
+msgid "Transform swapping the case"
+msgstr ""
+
+#: tfrmmain.cactionlocaluppercase.caption
+msgctxt "tfrmmain.cactionlocaluppercase.caption"
+msgid "UPPER CASE"
+msgstr ""
+
+#: tfrmmain.cactionlocaluppercase.hint
+msgctxt "tfrmmain.cactionlocaluppercase.hint"
+msgid "Transform into UPPER CASE"
+msgstr ""
+
+#: tfrmmain.cactionlowercase.caption
+msgctxt "tfrmmain.cactionlowercase.caption"
+msgid "lower case"
+msgstr ""
+
+#: tfrmmain.cactionlowercase.hint
+msgctxt "tfrmmain.cactionlowercase.hint"
+msgid "Transform into lower case"
+msgstr ""
+
+#: tfrmmain.cactionpaste.caption
+msgid "Paste"
+msgstr ""
+
+#: tfrmmain.cactionpaste.hint
+msgctxt "tfrmmain.cactionpaste.hint"
+msgid "Paste from clipboard"
+msgstr ""
+
+#: tfrmmain.cactionpropercase.caption
+msgctxt "tfrmmain.cactionpropercase.caption"
+msgid "Proper Case"
+msgstr ""
+
+#: tfrmmain.cactionpropercase.hint
+msgctxt "tfrmmain.cactionpropercase.hint"
+msgid "Transform into Proper Case"
+msgstr ""
+
+#: tfrmmain.cactionsettings.caption
+msgctxt "tfrmmain.cactionsettings.caption"
+msgid "Settings"
+msgstr ""
+
+#: tfrmmain.cactionsettings.hint
+msgctxt "tfrmmain.cactionsettings.hint"
+msgid "Settings"
+msgstr ""
+
+#: tfrmmain.cactionshow.caption
+msgid "Show"
+msgstr ""
+
+#: tfrmmain.cactionswapcase.caption
+msgctxt "tfrmmain.cactionswapcase.caption"
+msgid "Swap case"
+msgstr ""
+
+#: tfrmmain.cactionswapcase.hint
+msgctxt "tfrmmain.cactionswapcase.hint"
+msgid "Transform swapping the case"
+msgstr ""
+
+#: tfrmmain.cactionuppercase.caption
+msgctxt "tfrmmain.cactionuppercase.caption"
+msgid "UPPER CASE"
+msgstr ""
+
+#: tfrmmain.cactionuppercase.hint
+msgctxt "tfrmmain.cactionuppercase.hint"
+msgid "Transform into UPPER CASE"
+msgstr ""
+
+#: tfrmmain.caption
+msgctxt "tfrmmain.caption"
+msgid "KLConvert"
+msgstr ""
+
+#: tfrmmain.tdivider1.caption
+msgid "tDivider1"
+msgstr ""
+
+#: tfrmmain.tdivider2.caption
+msgid "tDivider2"
+msgstr ""
+
+#: tfrmmain.toolbar1.caption
+msgid "Main ToolBar"
+msgstr ""
+
+#: tfrmsettings.btnapply.caption
+msgid "Apply"
+msgstr ""
+
+#: tfrmsettings.btncancel.caption
+msgid "Cancel"
+msgstr ""
+
+#: tfrmsettings.btnsave.caption
+msgid "Save"
+msgstr ""
+
+#: tfrmsettings.caption
+msgctxt "tfrmsettings.caption"
+msgid "Settings"
+msgstr ""
+
+#: tfrmsettings.chbaltgrsymbols.caption
+msgid "AltGr symbols"
+msgstr ""
+
+#: tfrmsettings.chbautostart.caption
+msgid "Add to system Autostart"
+msgstr ""
+
+#: tfrmsettings.chbcapitalsymbols.caption
+msgid "Capital symbols"
+msgstr ""
+
+#: tfrmsettings.chbkbgroupsswitch.caption
+msgid "Switch keyboard layout"
+msgstr ""
+
+#: tfrmsettings.chblaunchminimized.caption
+msgid "Launch minimized"
+msgstr ""
+
+#: tfrmsettings.chbshowicon.caption
+msgid "Show icon in tray"
+msgstr ""
+
+#: tfrmsettings.lblaboutinfo.caption
+msgid "About info..."
+msgstr ""
+
+#: tfrmsettings.lblapplicationtitle.caption
+msgctxt "tfrmsettings.lblapplicationtitle.caption"
+msgid "KLConvert"
+msgstr ""
+
+#: tfrmsettings.lblconvertlayouts.caption
+msgid "Convert layouts:"
+msgstr ""
+
+#: tfrmsettings.lblinputclipboarddescription.caption
+msgid "Emulate selected keystroke to copy selection to clipboard. If there is any text before operation in Clipboard it will be backed up and restored after completion. Backing up larger elements is pointless, as image might take 10 seconds or more. So anything else in Clipboard will be lost in this case."
+msgstr ""
+
+#: tfrmsettings.lblinputmethodcaption.caption
+msgid "Input method:"
+msgstr ""
+
+#: tfrmsettings.lblinputprimaryselectiondescription.caption
+msgid "Primary selection is a special clipboard that contains last selection. Simple solution, but not every application reports to Primary Selection. WINE does not report to Primary Selection and so as some qt and GTK4 application."
+msgstr ""
+
+#: tfrmsettings.lblkbgrouppair1.caption
+msgid "Layout 1:"
+msgstr ""
+
+#: tfrmsettings.lblkbgrouppair2.caption
+msgid "Layout 2:"
+msgstr ""
+
+#: tfrmsettings.lbllanguage.caption
+msgid "Language:"
+msgstr ""
+
+#: tfrmsettings.lbloutputclipboarddescription.caption
+msgid "Emulate selected keystroke to insert output from Clipboard."
+msgstr ""
+
+#: tfrmsettings.lbloutputmethodcaption.caption
+msgid "Output method:"
+msgstr ""
+
+#: tfrmsettings.lbloutputprimaryselectiondescription.caption
+msgid "Just copy back into Primary Selection, so user can insert it manually with middle mouse click. Unfortunetely there is no way to paste from Primary Selection with keyboard."
+msgstr ""
+
+#: tfrmsettings.lbloutputsendtextdescription.caption
+msgid "Emulate keyboard typing. Not always reliable. X11 might lag and lose some keystrokes sometimes."
+msgstr ""
+
+#: tfrmsettings.rbinputclipboard.caption
+msgid "Copy to clipboard"
+msgstr ""
+
+#: tfrmsettings.rbinputprimaryselection.caption
+msgctxt "tfrmsettings.rbinputprimaryselection.caption"
+msgid "Primary selection"
+msgstr ""
+
+#: tfrmsettings.rbkbgroupdetect.caption
+msgid "Detect destination layout"
+msgstr ""
+
+#: tfrmsettings.rbkbgrouppair.caption
+msgid "Switch between two layouts:"
+msgstr ""
+
+#: tfrmsettings.rboutputclipboard.caption
+msgctxt "tfrmsettings.rboutputclipboard.caption"
+msgid "Paste from clipboard"
+msgstr ""
+
+#: tfrmsettings.rboutputprimaryselection.caption
+msgctxt "tfrmsettings.rboutputprimaryselection.caption"
+msgid "Primary selection"
+msgstr ""
+
+#: tfrmsettings.rboutputsendtext.caption
+msgid "Type in output"
+msgstr ""
+
+#: unitsettings.rserrorwritingini
+#, object-pascal-format
+msgid ""
+"Failed to write into settings file:\n"
+"%s"
+msgstr ""
+
