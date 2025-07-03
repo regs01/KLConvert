@@ -7,7 +7,6 @@ object frmSettings: TfrmSettings
   ClientHeight = 832
   ClientWidth = 1197
   DesignTimePPI = 144
-  LCLVersion = '4.99.0.0'
   OnCreate = FormCreate
   OnShow = FormShow
   object lbSettingsCategories: TListBox
@@ -90,7 +89,7 @@ object frmSettings: TfrmSettings
       Height = 730
       Top = 0
       Width = 881
-      PageIndex = 0
+      PageIndex = 3
       Align = alTop
       Anchors = [akTop, akLeft, akRight, akBottom]
       BorderSpacing.Bottom = 24
@@ -383,7 +382,7 @@ object frmSettings: TfrmSettings
                 item
                   Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAutoSpring, coSmartResize, coAllowFocus]
                   Position = 1
-                  Width = 763
+                  Width = 761
                 end>
               Header.Options = [hoAutoResize, hoColumnResize, hoDrag, hoShowImages, hoShowSortGlyphs, hoAutoSpring]
               TabOrder = 0
@@ -736,8 +735,8 @@ object frmSettings: TfrmSettings
           Height = 726
           Top = 2
           Width = 877
-          HorzScrollBar.Page = 124
-          VertScrollBar.Page = 70
+          HorzScrollBar.Page = 351
+          VertScrollBar.Page = 113
           Align = alClient
           BorderSpacing.Left = 2
           BorderSpacing.Top = 2
@@ -770,6 +769,21 @@ object frmSettings: TfrmSettings
             Caption = 'KLConvert'
             Font.Style = [fsBold]
             ParentFont = False
+          end
+          object lblURL: TLabel
+            AnchorSideLeft.Control = lblAboutInfo
+            AnchorSideTop.Control = lblAboutInfo
+            AnchorSideTop.Side = asrBottom
+            Cursor = crHandPoint
+            Left = 12
+            Height = 23
+            Top = 90
+            Width = 339
+            BorderSpacing.Top = 32
+            Caption = 'https://github.com/regs01/KLConvert'
+            Font.Color = 16725044
+            ParentFont = False
+            OnClick = lblURLClick
           end
         end
       end

@@ -24,6 +24,7 @@ type
     cbTrayIcons: TComboBoxEx;
     cbLanguages: TComboBoxEx;
     ilTrayIcons: TImageList;
+    lblURL: TLabel;
     lblApplicationTitle: TLabel;
     lblLanguage: TLabel;
     lblConvertLayouts: TLabel;
@@ -79,6 +80,7 @@ type
     procedure chbKbGroupsSwitchChange(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure lblURLClick(Sender: TObject);
     procedure lbSettingsCategoriesDrawItem(Control: TWinControl; Index: Integer; ARect: TRect; State: TOwnerDrawState);
     procedure lbSettingsCategoriesMouseLeave(Sender: TObject);
     procedure lbSettingsCategoriesMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
@@ -533,6 +535,13 @@ procedure TfrmSettings.FormShow(Sender: TObject);
 begin
 
   lbSettingsCategories.Repaint;
+
+end;
+
+procedure TfrmSettings.lblURLClick(Sender: TObject);
+begin
+
+  OpenURL(TLabel(Sender).Caption);
 
 end;
 
