@@ -41,11 +41,11 @@ type
     function DoRestoreClipboardText: Boolean;
     //function DoRestoreClipboardAll: Boolean;
   public
-    function BackupClipboard(ATextOnly: Boolean): Boolean;
+    function BackupClipboard(const ATextOnly: Boolean): Boolean;
   public
     procedure ClearBackup;
-    procedure SetText(AString: UTF8String; AWaitForRequest: Boolean = False);
-    function RestoreClipboard(ATextOnly: Boolean): Boolean;
+    procedure SetText(constref AString: UTF8String; AWaitForRequest: Boolean = False);
+    function RestoreClipboard(const ATextOnly: Boolean): Boolean;
   public
     property BackupType: TKLClipboardBackupType read FBackupType;
     //property Clipboard: TClipboard read FClipboard;
@@ -53,7 +53,6 @@ type
 
   var
     ClipboardWrapper: TClipboardWrapper;
-
 
 implementation
 
@@ -202,11 +201,11 @@ begin
 
 end;
 
-procedure TClipboardWrapper.SetText(AString: UTF8String; AWaitForRequest: Boolean = False);
+procedure TClipboardWrapper.SetText(constref AString: UTF8String; AWaitForRequest: Boolean = False);
 begin
 
   {$IfDef LCLGTK3}
-  {$Error Writing to Clipboard and Formats are not implemented yet in LCLGTK3}
+  //{$Error Writing to Clipboard and Formats are not implemented yet in LCLGTK3}
   {$EndIf}
 
   {$If Defined(LCLGTK3) or Defined(LCLQt5) or Defined(LCLQt6)}
@@ -267,7 +266,7 @@ begin
 
 end;
 
-function TClipboardWrapper.BackupClipboard(ATextOnly: Boolean): Boolean;
+function TClipboardWrapper.BackupClipboard(const ATextOnly: Boolean): Boolean;
 begin
 
   Result := False;
@@ -278,7 +277,7 @@ begin
 
 end;
 
-function TClipboardWrapper.RestoreClipboard(ATextOnly: Boolean): Boolean;
+function TClipboardWrapper.RestoreClipboard(const ATextOnly: Boolean): Boolean;
 begin
 
   WriteLn('RestoreClipboard:');
@@ -299,6 +298,3 @@ finalization;
   ClipboardWrapper.Free;
 
 end.
-
-
-

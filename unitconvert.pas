@@ -23,12 +23,12 @@ type
   protected
     procedure Register;
   protected
-    function DetectDirection(AText: UTF8String): TKLConvertDirection;
+    function DetectDirection(constref AText: UTF8String): TKLConvertDirection;
     function GetName: String;
     function GetPairs: TKLConvertPairs;
   public
-    function FindChar(AChar: UTF8String; ADirection: TKLConvertDirection): UTF8String;
-    function Convert(AText: UTF8String; ADirection: TKLConvertDirection): UTF8String;
+    function FindChar(constref AChar: UTF8String; const ADirection: TKLConvertDirection): UTF8String;
+    function Convert(constref AText: UTF8String; const ADirection: TKLConvertDirection): UTF8String;
     function ShortClassName: String;
   public
     property Active: Boolean read FActive write FActive;
@@ -44,7 +44,6 @@ type
   TKLConvertList = class(TKLConvertCustomList)
     function IndexByClassName(AClassName: String): Integer;
   end;
-
 
 var
   ConvertList: TKLConvertList;
@@ -86,7 +85,7 @@ begin
 
 end;
 
-function TKLConvert.DetectDirection(AText: UTF8String): TKLConvertDirection;
+function TKLConvert.DetectDirection(constref AText: UTF8String): TKLConvertDirection;
 var
   LPairs: TKLConvertPairs;
   iCharIndex, iCharPairIndex: Integer;
@@ -140,7 +139,7 @@ begin
 
 end;
 
-function TKLConvert.FindChar(AChar: UTF8String; ADirection: TKLConvertDirection): UTF8String;
+function TKLConvert.FindChar(constref AChar: UTF8String; const ADirection: TKLConvertDirection): UTF8String;
 var
   LPairs: TKLConvertPairs;
   iCharIndex: Integer;
@@ -174,7 +173,7 @@ begin
 
 end;
 
-function TKLConvert.Convert(AText: UTF8String; ADirection: TKLConvertDirection): UTF8String;
+function TKLConvert.Convert(constref AText: UTF8String; const ADirection: TKLConvertDirection): UTF8String;
 var
   iCharIndex: Integer;
   iCharLength: Integer;

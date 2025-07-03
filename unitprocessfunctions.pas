@@ -11,7 +11,6 @@ uses
 const
   WordDelimiters = [#9, #10, #13, #11, #12, #32, #160];
 
-
   procedure ProcessConvert;
   function ProcessConvert(constref AString: UTF8String): UTF8String;
   procedure ProcessCase(const ACaseAction: TKLCaseAction);
