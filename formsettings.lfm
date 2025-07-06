@@ -7,6 +7,7 @@ object frmSettings: TfrmSettings
   ClientHeight = 832
   ClientWidth = 1197
   DesignTimePPI = 144
+  LCLVersion = '4.99.0.0'
   OnCreate = FormCreate
   OnShow = FormShow
   object lbSettingsCategories: TListBox
@@ -89,7 +90,7 @@ object frmSettings: TfrmSettings
       Height = 730
       Top = 0
       Width = 881
-      PageIndex = 3
+      PageIndex = 0
       Align = alTop
       Anchors = [akTop, akLeft, akRight, akBottom]
       BorderSpacing.Bottom = 24
@@ -382,7 +383,7 @@ object frmSettings: TfrmSettings
                 item
                   Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAutoSpring, coSmartResize, coAllowFocus]
                   Position = 1
-                  Width = 761
+                  Width = 763
                 end>
               Header.Options = [hoAutoResize, hoColumnResize, hoDrag, hoShowImages, hoShowSortGlyphs, hoAutoSpring]
               TabOrder = 0

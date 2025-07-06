@@ -477,8 +477,10 @@ begin
   else if rbKbGroupPair.Checked then
   begin
     Settings.LayoutSwitch := TKLLayoutSwitch.lsDefinedPair;
-    Settings.LayoutPair[0] := cbKbGroupPair1.ItemIndex;
-    Settings.LayoutPair[1] := cbKbGroupPair2.ItemIndex;
+    if cbKbGroupPair1.Items.Count>0  then
+      Settings.LayoutPair[0] := cbKbGroupPair1.ItemIndex;
+    if cbKbGroupPair2.Items.Count>0  then
+      Settings.LayoutPair[1] := cbKbGroupPair2.ItemIndex;
   end;
 
   Settings.ClipboardCopyShortcut := TextToShortCutRaw(cbInputHotkey.Text);

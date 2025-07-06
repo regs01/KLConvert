@@ -6,7 +6,7 @@ unit UnitXKeyInput;
 interface
 
 uses
-  Classes, SysUtils, Menus, Unix, X, xlib, XKB, xkblib, LCLProc, LazUTF8, Character,
+  Classes, SysUtils, Menus, Unix, X, xlib, XKB, xkblib, StrUtils, LCLProc, LazUTF8, Character,
   LazHotKeyFunctionsUnix;
 
 const
@@ -101,20 +101,31 @@ begin
   Result := False;
   SetLength({%H-}AGroups, 0);
 
-  pDesc := XkbGetKeyboard(AXDisplay, XkbAllComponentsMask, XkbUseCoreKbd);
+  //pDesc := XkbGetKeyboard(AXDisplay, XkbAllComponentsMask, XkbUseCoreKbd);
+  pDesc := XkbAllocKeyboard; // XkbGetKeyboard is not implemented in XWayland
+  if pDesc = nil then
+    Exit;
 
   try
 
-    XkbGetControls(AXDisplay, XkbAllControlsMask, pDesc);
-    XkbGetNames(AXDisplay, XkbGroupNamesMask, pDesc);
+    pDesc^.dpy := AXDisplay;
+
+    if XkbGetControls(AXDisplay, XkbAllControlsMask, pDesc) <> XkbOD_Success then
+      Exit;
+    if XkbGetNames(AXDisplay, XkbGroupNamesMask, pDesc) <> XkbOD_Success then
+      Exit;
 
     btGroups := pDesc^.ctrls^.num_groups;
 
     for btGroup := 0 to btGroups-1 do
     begin
       psGroupName := XGetAtomName(AXDisplay, pDesc^.names^.groups[btGroup]);
-      SetLength(AGroups, btGroup+1);
-      AGroups[btGroup] := String(psGroupName);
+      // Avoid duplication due to XWayland bug
+      if not(String(psGroupName) in AGroups) then
+      begin
+        SetLength(AGroups, btGroup+1);
+        AGroups[btGroup] := String(psGroupName);
+      end;
     end;
 
     Result := True;
@@ -250,9 +261,15 @@ begin
   btGroupCount := 0;
   SetLength({%H-}arGroups, 0);
 
-  pDesc := XkbGetKeyboard(AXDisplay, XkbAllComponentsMask, XkbUseCoreKbd);
+  //pDesc := XkbGetKeyboard(AXDisplay, XkbAllComponentsMask, XkbUseCoreKbd);
+  pDesc := XkbAllocKeyboard; // XkbGetKeyboard is not implemented in XWayland
+  if pDesc = nil then
+    Exit;
+
   try
-    XkbGetControls(AXDisplay, XkbAllControlsMask, pDesc);
+    pDesc^.dpy := AXDisplay;
+    if XkbGetControls(AXDisplay, XkbAllControlsMask, pDesc) <> XkbOD_Success then
+      Exit;
     btGroupCount := pDesc^.ctrls^.num_groups;
   finally
     XkbFreeKeyboard(pDesc, 0, True);
@@ -295,7 +312,6 @@ begin
     Inc(arGroups[btGroup]);
 
   end;
-
 
   AGroup := 0;
   for btGroupIndex := 1 to btGroupCount-1 do

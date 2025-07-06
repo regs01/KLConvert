@@ -67,4 +67,4 @@ https://github.com/double-commander/doublecmd/blob/master/src/platform/uiconthem
  - GTK3: OnRequest FormatID is not implemented [Do simple delay with checks]
  - Qt: OnRequest is not implemented [Do simple delay with checks]
  - LXQt: Showing some wrong unrelated icon in tray
- - Gnome: Doesn't launch
+ - ~~Gnome: Doesn't launch~~ (XWayland issue. XkbGetKeyboard is not implemented in XWayland.)
