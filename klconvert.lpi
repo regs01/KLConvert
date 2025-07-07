@@ -44,6 +44,7 @@
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="src"/>
             <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <CodeGeneration>
@@ -73,6 +74,7 @@
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="src"/>
             <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)-$(LCLWidgetType)"/>
           </SearchPaths>
           <Linking>
@@ -108,6 +110,7 @@
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="src"/>
             <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)-$(LCLWidgetType)"/>
           </SearchPaths>
           <Linking>
@@ -140,6 +143,7 @@
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="src"/>
             <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)-$(LCLWidgetType)"/>
           </SearchPaths>
           <Linking>
@@ -169,6 +173,7 @@
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="src"/>
             <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)-$(LCLWidgetType)"/>
           </SearchPaths>
           <Parsing>
@@ -219,6 +224,7 @@
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="src"/>
             <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)-$(LCLWidgetType)"/>
           </SearchPaths>
           <CodeGeneration>
@@ -261,6 +267,7 @@
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="src"/>
             <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)-$(LCLWidgetType)"/>
           </SearchPaths>
           <CodeGeneration>
@@ -331,75 +338,65 @@
         <IsPartOfProject Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="formmain.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="frmMain"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="FormMain"/>
-      </Unit>
-      <Unit>
-        <Filename Value="formsettings.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="frmSettings"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="FormSettings"/>
-      </Unit>
-      <Unit>
-        <Filename Value="unitklctype.pas"/>
+        <Filename Value="src/unitklctype.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="UnitKLCType"/>
       </Unit>
       <Unit>
-        <Filename Value="unitclipboard.pas"/>
+        <Filename Value="src/unitconverttatarenglish.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="UnitClipboard"/>
       </Unit>
       <Unit>
-        <Filename Value="unitxkeyinput.pas"/>
+        <Filename Value="src/unitconvertgreekenglish.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="UnitXKeyInput"/>
       </Unit>
       <Unit>
-        <Filename Value="unitinifileex.pas"/>
+        <Filename Value="src/unitconvertbulgarianenglish.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="UnitIniFileEx"/>
       </Unit>
       <Unit>
-        <Filename Value="unitsettings.pas"/>
+        <Filename Value="src/unitconvertrussianenglish.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="UnitSettings"/>
       </Unit>
       <Unit>
-        <Filename Value="unitprocessfunctions.pas"/>
+        <Filename Value="src/unitconvert.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="UnitProcessFunctions"/>
       </Unit>
       <Unit>
-        <Filename Value="unitconvert.pas"/>
+        <Filename Value="src/unitprocessfunctions.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="UnitConvert"/>
       </Unit>
       <Unit>
-        <Filename Value="unitconvertrussianenglish.pas"/>
+        <Filename Value="src/unitsettings.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="UnitConvertRussianEnglish"/>
       </Unit>
       <Unit>
-        <Filename Value="unitconvertbulgarianenglish.pas"/>
+        <Filename Value="src/unitinifileex.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="UnitConvertBulgarianEnglish"/>
       </Unit>
       <Unit>
-        <Filename Value="unitconvertgreekenglish.pas"/>
+        <Filename Value="src/unitxkeyinput.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="UnitConvertGreekEnglish"/>
       </Unit>
       <Unit>
-        <Filename Value="unitconverttatarenglish.pas"/>
+        <Filename Value="src/unitclipboard.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="UnitConvertTatarEnglish"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src/formsettings.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmSettings"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <ResourceBaseClassname Value=""/>
+      </Unit>
+      <Unit>
+        <Filename Value="src/formmain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <ResourceBaseClassname Value=""/>
       </Unit>
     </Units>
   </ProjectOptions>
@@ -410,6 +407,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="src"/>
       <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)-$(LCLWidgetType)"/>
     </SearchPaths>
     <CodeGeneration>
