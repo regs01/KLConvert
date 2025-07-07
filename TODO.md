@@ -49,7 +49,7 @@ https://github.com/double-commander/doublecmd/blob/master/src/platform/uiconthem
  - Update method descrptions
  - Add hints with descriptions
  + [x] About
- - Links into about
+ + [x] Links into about
 
 ### Processing
  + [x] Fallback to local if window is active
@@ -65,6 +65,7 @@ https://github.com/double-commander/doublecmd/blob/master/src/platform/uiconthem
 ### Platforms
  - GTK3: GetFormat is not implemented [Remove HasFormat check for GTK3]
  - GTK3: OnRequest FormatID is not implemented [Do simple delay with checks]
+ - GTK3: Form is always active, if visible
  - Qt: OnRequest is not implemented [Do simple delay with checks]
  - LXQt: Showing some wrong unrelated icon in tray
  - ~~Gnome: Doesn't launch~~ (XWayland issue. XkbGetKeyboard is not implemented in XWayland.)

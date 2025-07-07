@@ -110,9 +110,9 @@ begin
 
     pDesc^.dpy := AXDisplay;
 
-    if XkbGetControls(AXDisplay, XkbAllControlsMask, pDesc) <> XkbOD_Success then
+    if XkbGetControls(AXDisplay, XkbAllControlsMask, pDesc) <> Success then
       Exit;
-    if XkbGetNames(AXDisplay, XkbGroupNamesMask, pDesc) <> XkbOD_Success then
+    if XkbGetNames(AXDisplay, XkbGroupNamesMask, pDesc) <> Success then
       Exit;
 
     btGroups := pDesc^.ctrls^.num_groups;
@@ -143,7 +143,7 @@ begin
 
   Result := -1;
 
-  if XkbGetState(AXDisplay, XkbUseCoreKbd, @LState) <> XkbOD_Success then
+  if XkbGetState(AXDisplay, XkbUseCoreKbd, @LState) <> Success then
     Exit;
   Result := LState.group;
 
@@ -268,7 +268,7 @@ begin
 
   try
     pDesc^.dpy := AXDisplay;
-    if XkbGetControls(AXDisplay, XkbAllControlsMask, pDesc) <> XkbOD_Success then
+    if XkbGetControls(AXDisplay, XkbAllControlsMask, pDesc) <> Success then
       Exit;
     btGroupCount := pDesc^.ctrls^.num_groups;
   finally
@@ -534,7 +534,7 @@ begin
 
   btUnusedKeycode := GetUnusedKeycode(AXDisplay);
 
-  if XkbGetState(AXDisplay, XkbUseCoreKbd, @LState) <> XkbOD_Success then
+  if XkbGetState(AXDisplay, XkbUseCoreKbd, @LState) <> Success then
     Exit;
   btOriginalGroup := LState.group;
   btOriginalMask := LState.base_mods;
@@ -773,7 +773,7 @@ begin
 
   try
 
-    if XkbGetState(LDisplay, XkbUseCoreKbd, @LState) <> XkbOD_Success then
+    if XkbGetState(LDisplay, XkbUseCoreKbd, @LState) <> Success then
       Exit;
     btOriginalMask := LState.base_mods;
     if btOriginalMask <> XEmptyMask then
@@ -833,7 +833,7 @@ begin
 
   try
 
-    if XkbGetState(LDisplay, XkbUseCoreKbd, @LState) <> XkbOD_Success then
+    if XkbGetState(LDisplay, XkbUseCoreKbd, @LState) <> Success then
       Exit;
     btOriginalMask := LState.base_mods;
     if btOriginalMask <> XEmptyMask then
