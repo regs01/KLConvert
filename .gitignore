@@ -34,6 +34,9 @@ lib/
 
 app/deb/*/*
 app/deb/*.deb
+app/*.sh
+
+res/*/*.ps1
 
 .backup/
 bin/
