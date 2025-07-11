@@ -29,7 +29,7 @@
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MinorVersionNr Value="5"/>
-      <BuildNr Value="509"/>
+      <BuildNr Value="510"/>
     </VersionInfo>
     <MacroValues Count="1">
       <Macro3 Name="LCLWidgetType" Value="gtk2"/>
