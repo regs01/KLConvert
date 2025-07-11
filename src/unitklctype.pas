@@ -5,13 +5,13 @@ unit UnitKLCType;
 interface
 
 uses
-  Classes, SysUtils, LCLType, Forms, fgl;
+  Classes, SysUtils, LCLType, Forms, LMessages, fgl;
 
 const
   APP_ID = 'klconvert';
   CONFIG_FILENAME = APP_ID + '.cfg';
   LOCK_FILENAME = APP_ID + '.lck';
-  LM_TRANSLATE = $f100;
+  LM_TRANSLATE = LM_USER + $010;
 
 type
   TKLActionShortCutList = specialize TFPGMap<String, TShortCut>;
