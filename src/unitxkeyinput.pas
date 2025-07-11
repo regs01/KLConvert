@@ -1,3 +1,9 @@
+(* 
+  Copyright 2025 coth
+  https://github.com/regs01/
+  This file is also alternatively licensed under MIT (see COPYING.MIT.txt) 
+  or LGPL 2.1 with static link exception (see COPYING.LGPL.txt and COPYING.modifiedLGPL.txt)
+*)
 unit UnitXKeyInput;
 
 {$mode ObjFPC}{$H+}
