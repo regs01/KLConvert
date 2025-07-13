@@ -173,7 +173,7 @@ var
   begin
     sShortCutDefault := '';
     If AName = 'ConvertSelection' then
-      sShortCutDefault := 'Pause';
+      sShortCutDefault := 'Break';
     wShortCut := TextToShortCutFix( LSettingsIni.ReadString('KeyBinds', AName, sShortCutDefault) );
     Settings.KeyBinds.Add(AName, wShortCut);
   end;
@@ -182,6 +182,7 @@ var
   var
     arKbGroups: TKbGroupsArray;
   begin
+    Result := lsDisable;
     arKbGroups := UnitXKeyInput.GetKeyboardGroups;
     if Length(arKbGroups) < 2 then
       Result := lsDisable;

@@ -25,7 +25,6 @@ type
   TKLConvertOptions = set of TKLConvertOption;
   TKLConvertPairs = array of array of String;
 
-
   function GetConfigDir: String;
   function GetCacheDir: String;
   function GetConfigFilename: String;
