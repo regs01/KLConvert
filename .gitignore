@@ -34,7 +34,7 @@ lib/
 
 app/deb/*/*
 app/deb/*.deb
-app/*.sh
+app/archives/
 
 res/*/*.ps1
 

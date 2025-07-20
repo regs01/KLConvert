@@ -8,11 +8,12 @@ Source: https://github.com/regs01/KLConvert
 Architecture: amd64
 Priority: standard
 Depends: libxtst6, libqt5pas1, libqt5gui5t64
+Replaces: klconvert-gtk2, klconvert-qt6
 Description: Keyboard layout converter for X11
 <</CTRL>>
 <<FILES>>
 1
-./../../bin/release/klconvert-qt5* -> klconvert-qt5 -> /usr/bin
+./../../bin/release/linux-x86_64-qt5/klconvert* -> klconvert -> /usr/bin
 ./../../res/icons/hicolor/16x16/apps/klconvert.png -> klconvert.png -> /usr/share/icons/hicolor/16x16/apps
 ./../../res/icons/hicolor/24x24/apps/klconvert.png -> klconvert.png -> /usr/share/icons/hicolor/24x24/apps
 ./../../res/icons/hicolor/32x32/apps/klconvert.png -> klconvert.png -> /usr/share/icons/hicolor/32x32/apps
@@ -50,7 +51,7 @@ Name=KLConvert
 Comment=Keyboard layout conventer for X11
 Comment[ru]=Конвертор раскладки для X11
 Version=1.0
-Exec=/usr/bin/klconvert-qt5
+Exec=/usr/bin/klconvert
 Icon=klconvert
 Type=Application
 Terminal=false
