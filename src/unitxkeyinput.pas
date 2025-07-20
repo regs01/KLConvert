@@ -17,7 +17,7 @@ uses
 
 const
   libXtst = 'libXtst.so.6';
-  libXkbcommon = 'libxkbcommon.so';
+  libXkbcommon = 'libxkbcommon.so.0';
   XtKeyPressed: TBool = 1;
   XtKeyUnPressed: TBool = 0;
   XBoolTrue: TBool = 1;
