@@ -14,6 +14,14 @@ Three methods of sending conversion back to the app:
   2. Emulate paste from clipboard keystroke (Shift+Insert or Ctrl+V). So conversion will be copied into the main Clipboard and pasted with a keystroke. But again, it wouldn't work with widgetsets that won't accept synthetic keystrokes.
   3. Third method is to emulate typing. But this method is also not reliable. Due to X11 bug some input may get lost and some might even get reordered.
 
+### Dependencies
+The app requires libXtst and libxkbcommon. Also libQt5Pas for Qt5 and libQt6Pas for Qt6.
+- Debian-based packages: libxtst6, libxkbcommon0, libqt5pas1, libqt6pas6.
+- Red Hat-based packages: libXtst, libxkbcommon, qt5pas, qt6pas.
+- Arch-based packages: libxtst,	libxkbcommon, qt5pas, qt6pas.
+- Gentoo-based packages: libXtst, libxkbcommon, libqt6pas (no qt5 support).
+- FreeBSD packages: libXtst, libxkbcommon, qt5pas, qt6pas. 
+
 ### Qt bindings
 Binary release of most recent version of qt6 bindings can ve downloaded from here:\
 https://github.com/davidbannon/libqt6pas
