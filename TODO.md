@@ -69,4 +69,4 @@ https://github.com/double-commander/doublecmd/blob/master/src/platform/uiconthem
  - Qt: OnRequest is not implemented [Do simple delay with checks]
  - LXQt: Showing some wrong unrelated icon in tray
  + [x] ~~Gnome: Doesn't launch~~ (XWayland issue. XkbGetKeyboard is not implemented in XWayland.)
- - GTK3, Qt5, Qt6: Deal with double high DPI scaling (WS+LCL) [Disable wither WS scaling or LCL scaling]
+ - GTK3, Qt5, Qt6: Deal with double high DPI scaling (WS+LCL) [Disable either WS scaling or LCL scaling]
