@@ -19,10 +19,10 @@ https://github.com/double-commander/doublecmd/blob/master/src/platform/uiconthem
  + [x] Autostart
  + [x] Icon from deb package
  + [x] DEB package
- - DEB package variations
+ + [x] DEB package variations
  - RPM package
- - Licenses
- - Readme
+ + [x] Licenses
+ + [x] Readme
 
 ### Settings
  + [x] Show settings on first run
@@ -68,4 +68,5 @@ https://github.com/double-commander/doublecmd/blob/master/src/platform/uiconthem
  - GTK3: Form is always active, if visible
  - Qt: OnRequest is not implemented [Do simple delay with checks]
  - LXQt: Showing some wrong unrelated icon in tray
- - ~~Gnome: Doesn't launch~~ (XWayland issue. XkbGetKeyboard is not implemented in XWayland.)
+ + [x] ~~Gnome: Doesn't launch~~ (XWayland issue. XkbGetKeyboard is not implemented in XWayland.)
+ - GTK3, Qt5, Qt6: Deal with double high DPI scaling (WS+LCL) [Disable wither WS scaling or LCL scaling]
